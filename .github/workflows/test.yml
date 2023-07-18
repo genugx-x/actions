@@ -6,8 +6,10 @@ on:
     # push 한 경우 동작
     branches: [ "dev" ]
   pull_request:
-    # ? -> master 로 pull request 한 경우
+    # ? -> master pull request open, reopen 한 경우
     branches: [ "master" ]
+    types:
+      - closed
 jobs:
   build:
     runs-on: ubuntu-latest

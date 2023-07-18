@@ -2,15 +2,15 @@
 name: test
 
 on:
-  push:
-    branches: [ "master" ]
+#  push:
+#    branches: [ "master" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "dev" ]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Run Gretting!
-        run: echo Hello, master!
+        run: echo Hello, dev!
       - name: Run Goodbye!
-        run: echo Goodbye, master!
+        run: echo Goodbye, dev!

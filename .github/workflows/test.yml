@@ -2,15 +2,19 @@
 name: test
 
 on:
-#  push:
-#    branches: [ "master" ]
+  push:
+    # push 한 경우 동작
+    branches: [ "dev" ]
   pull_request:
+    # ? -> master pull request open, reopen 한 경우
     branches: [ "master" ]
+    types:
+      - closed
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Run Gretting!
-        run: echo Hello, master!
+        run: echo Hello, world!
       - name: Run Goodbye!
-        run: echo Goodbye, master!
+        run: echo Goodbye, world!

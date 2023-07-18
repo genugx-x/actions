@@ -11,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Gretting!
-        run: echo Hello, dev!
+        run: echo Hello, master!
       - name: Run Goodbye!
-        run: echo Goodbye, dev!
+        run: echo Goodbye, master!

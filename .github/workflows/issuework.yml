@@ -1,6 +1,7 @@
 name: Issue works
 on:
   issues:
+    # open 후 assigned를 하면 동작함
     types: [assigned]
   pull_request:
     types: [closed]
